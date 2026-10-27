@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zack1sammons-rgb.github.io/boomkit-site/sitemap.xml
