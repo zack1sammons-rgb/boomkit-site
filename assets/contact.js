@@ -1,8 +1,8 @@
-/* The one place this site keeps its contact address (2026-10-27). Swap it to zack@boomkit.app once that mailbox
-   exists; every page fills its [data-email] links and the creators form from this value. */
+/* The one place this site keeps its contact address (2026-10-27; zack@boomkit.app since 2026-10-28). To change it,
+   edit EMAIL; every page fills its [data-email] links and the creators form from this value. */
 (function () {
   'use strict';
-  var EMAIL = 'zack1sammons@gmail.com';
+  var EMAIL = 'zack@boomkit.app';
   window.BOOMKIT_EMAIL = EMAIL;
 
   function mailto(subject) {

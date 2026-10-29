@@ -1,0 +1,80 @@
+<!doctype html>
+<!--
+  LAWYER REVIEW: a lawyer should review this agreement before the first real payout (Canvas/STATUS.md Next).
+  Published 2026-10-28 (Zack: "All picks") from the server's own page, Canvas/app/backend/server/topaz/content/legal.py
+  contractor_page(), without its "working draft" banner. The app's Help, terms step, Pay notice and cash-out sheet open
+  this page, and the server's /legal/contractor-agreement redirects here, so it stays up when the mini is down.
+  Points to settle:
+  - The contract text itself: the server's `terms_markdown` setting (the text creators accept, version 2026-10-14) is
+    still "Placeholder until Zack's lawyer supplies the text.", so it is left off this page.
+  - The app's terms step says creators "sign the full contractor agreement and a W-9 before your first payout"; no
+    signing flow exists yet.
+  Sync: the Pay rule, Parties and Status paragraphs must match contractor_page() word for word. test_integration
+  (LegalPages) fails when they drift; after a pay setting change, copy the new paragraphs here and publish.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Contractor agreement: BoomKit</title>
+  <meta name="description" content="The independent contractor terms between BoomKit LLC and the creators who post for BoomKit campaigns.">
+  <meta name="theme-color" content="#07090a">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://zack1sammons-rgb.github.io/boomkit-site/contractor-agreement/">
+  <link rel="icon" href="../assets/boomkit-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/site.css">
+  <script src="../assets/contact.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../" translate="no">
+        <img src="../assets/boomkit-icon.png" width="28" height="28" alt="">
+        <span>BoomKit</span>
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav">
+          <li class="nav-extra"><a href="../privacy/">Privacy</a></li>
+          <li class="nav-extra"><a href="../terms/">Terms</a></li>
+          <li><a href="../support/">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="legal">
+    <div class="wrap">
+      <h1>Contractor agreement</h1>
+      <p class="effective">Version 2026-10-14 · Last updated: October 28, 2026</p>
+      <p class="summary">Independent contractor terms for creators who post for BoomKit campaigns. They sit alongside our <a href="../terms/">Terms of use</a> and <a href="../privacy/">Privacy policy</a>.</p>
+
+      <section id="parties" aria-labelledby="parties-title">
+        <h2 id="parties-title">1. Parties</h2>
+        <p>These terms are between you and <span translate="no">BoomKit LLC</span>, a Utah limited liability company at 1136 E 820 N, Provo, UT 84606, which operates <span translate="no">BoomKit</span>. Questions: <a data-email href="mailto:zack@boomkit.app">zack@boomkit.app</a>.</p>
+      </section>
+
+      <section id="status" aria-labelledby="status-title">
+        <h2 id="status-title">2. Status</h2>
+        <p>Creators are independent contractors aged 18 or older. They choose which briefs to accept, make their own videos and post them on their own accounts with the ad disclosure on.</p>
+      </section>
+
+      <section id="pay" aria-labelledby="pay-title">
+        <h2 id="pay-title">3. Pay rule</h2>
+        <p>Pay comes from each brand campaign's pool: $1.50 per 1K views + $5 a day for posting. Daily pay rises to $6 on a 7-day streak, more by tier. There is no random money anywhere.</p>
+        <p>Daily pay: $5.00 to $6.00 by streak day (+$0.50 Silver, +$1 Gold, +$2 Diamond), paid once per campaign per day on the first qualifying post. View pay: $1.50 per 1K views up to 100K, $1.00 per 1K up to 1M and $0.50 per 1K after. Bonuses: +$50 at 100K and +$250 at 1M. The first 1,000 views pay $0. The rate starts after the first 1K. Tier boost on view pay: +2% Silver, +4% Gold, +6% Diamond. Views count for 14 days from posting. One video earns at most 25% of a campaign's pool, and one creator at most 35%. View pay lands Mondays. Credits can be cashed out 14 days after they land. At Bronze, 10K views pay $13.50, 100K pay $198.50 and 1M pay $1,348.50.</p>
+        <p>Cash-outs start at $10. A creator never pays BoomKit anything. If a post is rejected or its views turn out to be bought, what it earned is taken back while the money is still in its 14-day hold, before it can be cashed out, and is never billed.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <img src="../assets/boomkit-icon.png" width="20" height="20" alt="">
+      <p><span class="nowrap">© 2026 <span translate="no">BoomKit LLC</span></span> <span class="nowrap">· Provo, Utah</span> <span class="nowrap">· <a href="../creators/">Creators</a> · <a href="../support/">Support</a> · <a href="../privacy/">Privacy</a> · <a href="../terms/">Terms</a></span></p>
+    </div>
+  </footer>
+</body>
+</html>
